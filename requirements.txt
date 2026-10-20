@@ -1,0 +1,4 @@
+fastapi
+uvicorn[standard]
+netguard-threat-monitor[web]
+xgboost
