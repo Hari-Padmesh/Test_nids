@@ -68,7 +68,7 @@ class ResendEmailNotifier:
 app = FastAPI(title="My API")
 
 guard = NetGuard(
-    project_id="my-api",
+    project_id=os.environ["NETGUARD_PROJECT_ID"],
     auth_username=os.environ["NETGUARD_AUTH_USERNAME"],
     auth_password=os.environ["NETGUARD_AUTH_PASSWORD"],
 )
